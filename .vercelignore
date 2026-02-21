@@ -1,0 +1,9 @@
+node_modules
+.next
+.env.local
+.env*.local
+.kiro
+.vscode
+*.md
+test-backend.js
+bun.lock
