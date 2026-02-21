@@ -210,7 +210,7 @@ NEXT_PUBLIC_SUPABASE_URL=https://pddzlalxucwmvlhzeltk.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 # JWT Secret (IMPORTANT: Change this!)
-JWT_SECRET=your-super-secret-jwt-key-min-32-characters-long
+JWT_SECRET=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBkZHpsYWx4dWN3bXZsaHplbHRrIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MTYwMzI1MiwiZXhwIjoyMDg3MTc5MjUyfQ.lpGazp--jR-w-_LmTbg4JY5uFa627pLLZ7HpqlWSpMg
 
 # Optional: OpenAI for AI Chat (if you want AI features)
 OPENAI_API_KEY=sk-...

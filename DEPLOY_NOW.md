@@ -33,7 +33,7 @@
    
    Variable 3:
    Name: JWT_SECRET
-   Value: your-super-secret-key-change-this-to-random-32-chars
+   Value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBkZHpsYWx4dWN3bXZsaHplbHRrIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MTYwMzI1MiwiZXhwIjoyMDg3MTc5MjUyfQ.lpGazp--jR-w-_LmTbg4JY5uFa627pLLZ7HpqlWSpMg
    ```
 
 5. **Click "Deploy"** 🚀
