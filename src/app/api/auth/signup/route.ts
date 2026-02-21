@@ -15,20 +15,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Check device limit
-    const { data: deviceData, error: deviceError } = await supabase
-      .from('device_tracking')
-      .select('account_count')
-      .eq('device_fingerprint', deviceFingerprint)
-      .single();
-
-    if (deviceData && deviceData.account_count >= 3) {
-      return NextResponse.json(
-        { error: 'Maximum 3 accounts per device. Limit reached.' },
-        { status: 403 }
-      );
-    }
-
     // Check if username already exists
     const { data: existingUser } = await supabase
       .from('users')
@@ -70,7 +56,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Update device tracking
+    // Track device (no limit)
+    const { data: deviceData } = await supabase
+      .from('device_tracking')
+      .select('account_count')
+      .eq('device_fingerprint', deviceFingerprint)
+      .single();
+
     if (deviceData) {
       await supabase
         .from('device_tracking')
